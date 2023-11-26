@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>Hello from Electron renderer!</title>
+  <head>    
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <title class="centre">What Now</title>
+
   </head>
+
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
+    <div class="main">
+
+      <div class="title">
+        <h1 class="BigText">What-Now</h1>     
+      </div>     
+
+      <div class="LoginContainer">
+        <form>
+          <h2 for="fname">Name</label><br>
+          <input class="input" type="text" id="fname" name="fname">
+
+          <h2 for="lname">Password</label><br>
+          <input class="input" type="text" id="lname" name="lname"><br><br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
   </body>
+
 </html>
