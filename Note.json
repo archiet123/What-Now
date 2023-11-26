@@ -1,0 +1,20 @@
+{
+    "Colours":{
+        "Darks":[
+            {
+                "main": "#21252b",
+                "Secondary": "#333842",
+                "Tertiary": "#528bff",
+                "quaternary":"#778899"
+            }
+        ],
+        "Lights":[
+            {
+                "main": "##FFFFFF",
+                "Secondary": "#CEE7E6",
+                "Tertiary": "##528BFF",
+                "quaternary":"#778899"
+            }
+        ]
+    }
+}

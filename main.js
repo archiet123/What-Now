@@ -15,3 +15,7 @@ const createWindow = () => {
 app.whenReady().then(() => {
   createWindow()
 })
+
+function ColourSwitch() {
+  document.body.classList.toggle("DarkScheme");
+}  
