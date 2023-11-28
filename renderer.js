@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     let String = Names.map((elem) => {
         return elem.Name;
     }).join("<br/>");
-    DivNames.innerHTML = String;
+    DivNames.innerText = String;
 });
 
-console.log("test");
+
 
