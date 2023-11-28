@@ -86,6 +86,7 @@ h2{
     color: var(--quaternary);
     font-size: 21px;
     outline: none;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -102,6 +103,11 @@ h2{
     background-color: #528bff;
     text-decoration: none;
     color: white;
+    transition: transform .2s;
+}
+
+.SubmitButton:hover{
+  transform: scale(1.2);  
 }
 
 .StyleToggleContainer{
@@ -163,4 +169,8 @@ h2{
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
+
+.test{
+  color: white;
+}
   
