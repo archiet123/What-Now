@@ -10,3 +10,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     DivNames.innerHTML = String;
 });
 
+console.log("test");
+
