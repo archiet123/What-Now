@@ -1,5 +1,5 @@
 const DataTest = require("./DataBaseFiles/GetDataTest");
-// const { contextBridge } = require('electron');
+const { contextBridge } = require('electron');
 
 const GetNames = () => {
     return DataTest.GetNames();
