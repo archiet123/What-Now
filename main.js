@@ -1,21 +1,23 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
+const path = require('node:path');
 
 const createWindow = () => {
-  const win = new BrowserWindow({ show: false })
+  const win = new BrowserWindow({
+    show: false,
+    webPreferences: {
+      // nodeIntegration: true,
+      // contextIsolation: false,
+      preload: path.join(__dirname, 'preload.js')
+    }
+  })
   win.maximize();
   win.show();
-
-  // win.loadURL('https://github.com')
-  // const contents = win.webContents
-  // console.log(contents)
-
   win.loadFile('index.html')
+
+
 }
 
 app.whenReady().then(() => {
   createWindow()
 })
 
-function ColourSwitch() {
-  document.body.classList.toggle("DarkScheme");
-}  
