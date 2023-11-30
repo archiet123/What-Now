@@ -1,22 +1,23 @@
-const DataTest = require("./DataBaseFiles/GetDataTest");
+const DataTest = require("./DataBaseFiles/GetDataTest.js");
 const { contextBridge, ipcRenderer } = require('electron');
 // // 
 
 contextBridge.exposeInMainWorld(
-    'electron',
+    'Test',
     {
-        // doThing: () => ipcRenderer.DataTest.GetNames()
-        GetNames: () => {
-            return DataTest.GetNames()
-            // ipcRenderer.send(DataTest.GetNames())
-        }
+        doThing: () => GetNames()
+        // GetNames: () => {
+        //     // return DataTest.GetNames()
+        //     ipcRenderer.send(DataTest.GetNames())
+        //     // doThing: () => ipcRenderer.send('do-a-thing')
+        // }
     }
 )
 
-// const GetNames = () => {
-//     return DataTest.GetNames()
-//     //ipcRenderer.send('do-a-thing')
-// }
+const GetNames = () => {
+    return DataTest.GetNames()
+    //ipcRenderer.send('do-a-thing')
+}
 
 // if (DataTest) {
 //     console.log("true");

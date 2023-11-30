@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     console.log("Renderer > DOMContentLoaded");
 
-    let Names = window.electron.GetNames();
+    let Names = window.Test.doThing()
 
     let DivNames = document.getElementById("test");
     let String = Names.map((elem) => {
@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     }).join("<br/>");
     DivNames.innerText = String;
 });
+
+function ColourSwitch() {
+    document.body.classList.toggle("DarkScheme");
+}
 
 
 
