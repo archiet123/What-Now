@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     console.log("Renderer > DOMContentLoaded");
 
-    let Names = window.api.GetNames();
+    let Names = window.electron.GetNames();
 
     let DivNames = document.getElementById("test");
     let String = Names.map((elem) => {

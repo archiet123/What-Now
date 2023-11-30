@@ -1,20 +1,32 @@
-const DataTest = require("./DataBaseFiles/GetDataTest.js");
-const { contextBridge } = require('electron');
+const DataTest = require("./DataBaseFiles/GetDataTest");
+const { contextBridge, ipcRenderer } = require('electron');
+// // 
 
-// 
-if (DataTest) {
-    console.log("true");
-} else {
-    console.log("false");
-}
+contextBridge.exposeInMainWorld(
+    'electron',
+    {
+        // doThing: () => ipcRenderer.DataTest.GetNames()
+        GetNames: () => {
+            return DataTest.GetNames()
+            // ipcRenderer.send(DataTest.GetNames())
+        }
+    }
+)
 
-const GetNames = () => {
-    return DataTest.GetNames();
-}
+// const GetNames = () => {
+//     return DataTest.GetNames()
+//     //ipcRenderer.send('do-a-thing')
+// }
 
-contextBridge.exposeInMainWorld("api", {
-    GetNames: GetNames
-})
+// if (DataTest) {
+//     console.log("true");
+// } else {
+//     console.log("false");
+// }
+
+// contextBridge.exposeInMainWorld("api", {
+//     GetNames: GetNames
+// })
 
 contextBridge.exposeInMainWorld('versions', {
     node: () => process.versions.node,

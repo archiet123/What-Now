@@ -1,5 +1,5 @@
 var Manager = require("./DBManager.js");
-var DB = Manager.db;
+var DB = Manager.DB;
 
 exports.GetNames = () => {
     const qry = "Select * FROM Test";
