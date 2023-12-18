@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="Styles.css" />
+    <link rel="icon" href="FavIcon.ico">
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
       rel="stylesheet"
@@ -39,11 +40,13 @@
             placeholder="Password"
           />
           <div class="pageSeperator" id="quaternary"></div>
+          <script src="renderer.js"></script>
           <input
             class="input SubmitButton"
-            type="submit"
+            type="button"
             value="Login"
-            id="Tertiary"
+            id="Tertiary SubmitButton"
+            onclick="SubmitClicked()"
           />
         </form>
       </div>
