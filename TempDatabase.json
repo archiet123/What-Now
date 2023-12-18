@@ -1,5 +1,1 @@
-{"Users":[
-    { "firstName":"John", "lastName":"Doe", "password": "test" },
-    { "firstName":"Anna", "lastName":"Smith" , "password": "banana" },
-    { "firstName":"Peter", "lastName":"Jones", "password": "car"  }
-  ]}
+data = '[{"blue" : "is ok", "red" : "is my fave color"}]';

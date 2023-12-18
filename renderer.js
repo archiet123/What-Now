@@ -10,21 +10,23 @@
 //     DivNames.innerText = String;
 // });
 
+data = '[{"Anna" : "banana", "Peter" : "car"}]';
+
 function ColourSwitch() {
     document.body.classList.toggle("DarkScheme");
 }
 
 function SubmitClicked(){
     
-    const Name = document.getElementById("fname").value;
-
-    if (Name != ''){
-        console.log(Name);
-    }else{
-        console.log("Error, please enter name");
-    }
+    // const Name = document.getElementById("fname").value;
     
+
+    // if (Name != ''){
+       
+        
+    // }else{
+    //     console.log("Error, please enter name");
+    // }
+    
+ 
 }
-
-
-

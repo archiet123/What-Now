@@ -16,5 +16,22 @@
                 "quaternary":"#778899"
             }
         ]
+    },
+    "Users":[
+    { 
+        "firstName":"John", 
+        "lastName":"Doe", 
+        "password": "test" 
+    },
+    { 
+        "firstName":"Anna", 
+        "lastName":"Smith" , 
+        "password": "banana" 
+    },
+    { 
+        "firstName":"Peter", 
+        "lastName":"Jones", 
+        "password": "car"  
     }
-}
+  ]}
+

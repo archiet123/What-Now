@@ -1,4 +1,4 @@
-const DataTest = require("./DataBaseFiles/GetDataTest.js");
+const DataTest = require("./GetDataTest.js");
 const { contextBridge, ipcRenderer } = require('electron');
 // // 
 

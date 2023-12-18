@@ -11,6 +11,11 @@
     --quaternary:#778899;
 }
 
+a:visited { text-decoration: none; color:var(--quaternary); }
+a:hover { text-decoration: none; color:var(--quaternary); }
+a:focus { text-decoration: none; color:var(--quaternary); }
+a:hover, a:active { text-decoration: none; color:var(--quaternary); }
+
 
 body{    
     padding: 0;
@@ -106,8 +111,18 @@ h2{
     transition: transform .2s;
 }
 
+.Back{
+  position: fixed;
+  top: 15px;
+  left:15px
+}
+
+.BackBtn{
+  text-decoration: none;
+}
+
 .SubmitButton:hover{
-  transform: scale(1.2);  
+  transform: scale(1.1);  
 }
 
 .StyleToggleContainer{
